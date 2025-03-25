@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">awesomevacationtracker</string>
+    <string name="app_name">Awesome Vacation Tracker</string>
+    <string name="channel_name">mychannelname</string>
+    <string name="channel_description">mychanneldescription</string>
 </resources>
