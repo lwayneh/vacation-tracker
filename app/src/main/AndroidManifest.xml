@@ -2,25 +2,92 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/vacationlogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/vacationlogo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Awesomevacationtracker"
-        tools:targetApi="31">
+        android:theme="@style/Theme.AwesomeVacationTracker"
+        tools:targetApi="35">
+        <receiver
+            android:name="edu.wgu.awesomevacationtracker.Activities.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+        </receiver>
+        <!-- START MY CODE            ////////////////////////////////////////////// -->
         <activity
-            android:name=".MainActivity"
+            android:name="edu.wgu.awesomevacationtracker.Activities.ExcursionDetails"
+            android:exported="false"
+            android:label="Excursion Details"
+            android:parentActivityName="edu.wgu.awesomevacationtracker.Activities.VacationDetails">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.wgu.awesomevacationtracker.Activities.VacationDetails" />
+        </activity>
+        <activity
+            android:name="edu.wgu.awesomevacationtracker.Activities.VacationDetails"
+            android:exported="false"
+            android:label="Details of Vacation Adventure!"
+            android:parentActivityName="edu.wgu.awesomevacationtracker.Activities.VacationList">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="edu.wgu.awesomevacationtracker.Activities.VacationList"
+            android:exported="false"
+            android:label="Vacations List"
+            android:parentActivityName="edu.wgu.awesomevacationtracker.Activities.MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+
+        <!--END  MY CODE            ////////////////////////////////////////////// -->
+        <activity
+            android:name="edu.wgu.awesomevacationtracker.Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+
+
+
+        <activity
+            android:name="edu.wgu.awesomevacationtracker.Activities.PartDetails"
+            android:exported="false"
+            android:label="Part Details"
+            android:parentActivityName="edu.wgu.awesomevacationtracker.Activities.ProductDetails">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="edu.wgu.awesomevacationtracker.Activities.ProductDetails"
+            android:exported="false"
+            android:label="Product Details"
+            android:parentActivityName="edu.wgu.awesomevacationtracker.Activities.ProductList">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="edu.wgu.awesomevacationtracker.Activities.ProductList"
+            android:exported="false"
+            android:label="Product List"
+            android:parentActivityName="edu.wgu.awesomevacationtracker.Activities.MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
 </manifest>
+
