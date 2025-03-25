@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Update Excursion"
+        android:id="@+id/excursionUpdate"/>
+    <item android:title="Delete Excursion"
+        android:id="@+id/excursionDelete"/>
+    <item android:title="Notification Setup"
+        android:orderInCategory="100"
+        android:id="@+id/notify"/>
+</menu>

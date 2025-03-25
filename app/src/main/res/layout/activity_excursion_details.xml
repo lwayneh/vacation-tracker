@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.wgu.awesomevacationtracker.Activities.ExcursionDetails">
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <!-- Vacation ASSOCIATED -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="26dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="25dp"
+                android:textSize="18dp"
+                android:text="Vacation (ID/Title)" />
+
+        </LinearLayout>
+        <!-- Vacation INFO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="26dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/excursionVID"
+                android:layout_width="50dp"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/excursionVTitle"
+                android:textSize="18dp"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- ID Number -->
+        <LinearLayout
+            android:height="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="25dp"
+                android:textSize="18dp"
+                android:text="Excursion ID" />
+
+            <TextView
+                android:id="@+id/excursionID"
+                android:layout_width="50dp"
+                android:textSize="18dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- TITLE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+            <EditText
+                android:id="@+id/excursionTitle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price" />
+
+            <EditText
+                android:id="@+id/excursionPrice"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- DATE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date" />
+
+            <EditText
+                android:id="@+id/excursionDate"
+                android:layout_width="150dp"
+                android:hint="mm-dd-yyyy"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
