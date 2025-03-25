@@ -57,37 +57,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
-
-        <activity
-            android:name="edu.wgu.awesomevacationtracker.Activities.PartDetails"
-            android:exported="false"
-            android:label="Part Details"
-            android:parentActivityName="edu.wgu.awesomevacationtracker.Activities.ProductDetails">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="edu.wgu.awesomevacationtracker.Activities.ProductDetails"
-            android:exported="false"
-            android:label="Product Details"
-            android:parentActivityName="edu.wgu.awesomevacationtracker.Activities.ProductList">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name="edu.wgu.awesomevacationtracker.Activities.ProductList"
-            android:exported="false"
-            android:label="Product List"
-            android:parentActivityName="edu.wgu.awesomevacationtracker.Activities.MainActivity">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
     </application>
 </manifest>
 
