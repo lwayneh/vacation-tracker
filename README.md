@@ -19,11 +19,11 @@ This repository includes a generated and tested signed APK, deployable using And
 
 ### Repository URL
 You can view the complete source code and project files here:
-[Gitlab repository link](https://gitlab.com/wgu-gitlab-environment/student-repos/lhagan4/d308-mobile-application-development-android.git)
+[Gitlab repository link](https://gitlab.com/wgu-gitlab-environment/student-repos/lhagan4/d308-mobile-application-development-android/-/tree/finalbranch/)
 
 ### APK Instructions:
-1. Download and install Android Studio [here]().
-2. Download the signed APK [here]().
+1. Download and install Android Studio [here](https://developer.android.com/studio).
+2. Download the signed APK [here](https://gitlab.com/wgu-gitlab-environment/student-repos/lhagan4/d308-mobile-application-development-android/-/raw/finalbranch/TaskE.SignedAPK/release/app-release.apk?inline=false).
 3. In your Android Studio application, click on File -> Profile or Debug APK.
 4. From within the "Select APK File" window, find the apk file on your local desktop.
 5. In the "APK Import" window, click on "Use New Project".
