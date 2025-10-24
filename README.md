@@ -30,7 +30,7 @@ You can view the complete source code and project files here:
 6. Once the APK has finished setting up, a new Android Studio window should pop up. From the Toolbar, click on the green arrow button.
 7. In the "app-release" window, click again on the green arrow button in the Toolbar. It will take a minute or two for the target device (emulator) to go boot up, install the application and open it on the android device emulator screen.
 
-That's it! Enjoy our previw of the Awesome Vacation Tracker application.
+That's it! Enjoy our preview of the Awesome Vacation Tracker application.
 
 
 ### How to Use the Awesome Vacation Tracker
@@ -46,5 +46,3 @@ That's it! Enjoy our previw of the Awesome Vacation Tracker application.
     - Set a notification for its scheduled date.
     - Modify or delete vacations and excursions as needed!
 
-### Credits
-Task 1 Submission by Larry Hagan (ID: 000757994)
