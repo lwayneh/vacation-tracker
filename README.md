@@ -17,10 +17,6 @@ This repository includes a generated and tested signed APK, deployable using And
 - Room library: The Room persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite
 - SQL Lite for the locally stored database
 
-### Repository URL
-You can view the complete source code and project files here:
-[Gitlab repository link](https://gitlab.com/wgu-gitlab-environment/student-repos/lhagan4/d308-mobile-application-development-android/-/tree/finalbranch/)
-
 ### APK Instructions:
 1. Download and install Android Studio [here](https://developer.android.com/studio).
 2. Download the signed APK [here](https://gitlab.com/wgu-gitlab-environment/student-repos/lhagan4/d308-mobile-application-development-android/-/raw/finalbranch/TaskE.SignedAPK/release/app-release.apk?inline=false).
